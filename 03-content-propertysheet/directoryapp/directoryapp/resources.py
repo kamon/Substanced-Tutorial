@@ -8,7 +8,7 @@ from substanced.schema import (
     )
 
         
-## The Content object PropertySheet definition
+## The Content object schema
 
 class ContactSchema(Schema):
     name = NameSchemaNode(
@@ -35,6 +35,8 @@ class ContactSchema(Schema):
         colander.String(),
         widget=deform.widget.RichTextWidget()
         )
+
+## The Content object PropertySheet
 
 class ContactPropertySheet(PropertySheet):
     schema = ContactSchema()
