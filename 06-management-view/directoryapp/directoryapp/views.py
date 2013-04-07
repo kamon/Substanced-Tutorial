@@ -2,7 +2,7 @@ from pyramid.httpexceptions import HTTPFound
 
 from substanced.sdi import mgmt_view
 from substanced.form import FormView
-from substanced.interfaces import IFolder
+from substanced.interfaces import IRoot
 
 from .resources import (
     ContactSchema,
@@ -11,7 +11,7 @@ from .resources import (
 
 ## SDI "add" view for contacts
 @mgmt_view(
-    context=IFolder,
+    context=IRoot,
     name='add_contact',
     tab_title='Add Contact', 
     permission='sdi.add-content', 
