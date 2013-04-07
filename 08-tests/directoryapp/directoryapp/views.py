@@ -1,5 +1,5 @@
 from pyramid.httpexceptions import HTTPFound
-
+from pyramid.view import view_config
 from pyramid.renderers import get_renderer
 
 from substanced.sdi import mgmt_view
