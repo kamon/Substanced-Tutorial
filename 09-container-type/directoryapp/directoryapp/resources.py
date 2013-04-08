@@ -3,6 +3,10 @@ import deform.widget
 
 from persistent import Persistent
 
+from zope.interface import (
+    implementer,
+    )
+
 from substanced.content import content
 from substanced.property import PropertySheet
 from substanced.schema import (
