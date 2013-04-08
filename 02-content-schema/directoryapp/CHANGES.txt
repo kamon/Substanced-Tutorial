@@ -1,4 +1,4 @@
-learnsubstanced Changelog
+directoryapp Changelog
 =====================
 
 0.0
