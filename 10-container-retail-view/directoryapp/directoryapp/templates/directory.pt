@@ -1,0 +1,18 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      metal:use-macro="master">
+<head>
+ <title metal:fill-slot="head-title">${title}</title>
+</head>
+<body>
+ <h1 metal:fill-slot="body-title">${title}</h1>
+ <div metal:fill-slot="body-content">
+   <p>${description}</p>
+   <ul>
+     <li tal:repeat="contact contacts" >
+       <a href="" tal:attributes="href python:contact['url']"
+                  tal:content="python:contact['fullname']" >Contact</a>
+     </li>
+   </ul>
+ </div>
+</body>
+</html>
