@@ -52,6 +52,7 @@ class ContactPropertySheet(PropertySheet):
     propertysheets = (
         ('Basic', ContactPropertySheet),
         ),
+    catalog=True,
     )
 class Contact(Persistent):
 
