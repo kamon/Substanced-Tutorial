@@ -8,6 +8,7 @@ from zope.interface import (
     )
 
 from substanced.content import content
+from substanced.folder import Folder
 from substanced.property import PropertySheet
 from substanced.schema import (
     Schema,
@@ -102,5 +103,6 @@ class Directory(Folder):
     name = renamer()
     
     def __init__(self, title='', description=''):
+        Folder.__init__(self)
         self.title = title
         self.description = description
